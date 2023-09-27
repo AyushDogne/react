@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function no(){
+        let n=document.getElementById('n').value;
+        let name=["ayush","dipu","pooja","bhavna"];
+        let t="<ol>";
+            for(let i=0;i<=n;i++)
+            {
+                t+="<li>"+name[i]+"<li>";
+            }
+            t+="</ol>";
+         document.getElementById('d').innerHTML=t;
+        }
+    </script>
+</head>
+<body>
+    enter the value of n <input type="text" name="" id="n"><br>
+    <input type="submit" onclick="no()">
+    <p id="d"></p>
+    
+</body>
+</html>
